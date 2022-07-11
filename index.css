@@ -1,0 +1,96 @@
+html {
+    background: url(/bg-mobile.svg) hsl(257, 40%, 49%) no-repeat center top;
+    background-size: contain;
+}
+
+.main {
+    width: 375px;
+    margin: 50px auto;
+}
+
+.logo {
+    width: 40%;
+    margin: 0 0 32px;
+}
+
+.pc {
+    width: 100%;
+    height: 300px;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    /* font-family: ; */
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 20px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+button {
+    width: 50%;
+    padding: 12px;
+    margin: 16px 25%;
+    border-radius: 24px;
+    border: none;
+    font-size: 15px;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 2px 16px rgb(81, 81, 81);
+}
+
+@media (min-width: 550px) {
+    html {
+        background: url(/bg-desktop.svg) hsl(257, 40%, 49%) no-repeat left top;
+        background-size: cover;
+    }
+    .main {
+        width: 95%;
+        margin: 30px 30px;
+    }
+    .logo {
+        width: 12%;
+        margin: 0 0 32px;
+    }
+    .details {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+    }
+    .pc {
+        width: 50%;
+        height: auto;
+    }
+    .info {
+        width: 45%;
+        /* margin: 0 0 0 50px; */
+    }
+    h1 {
+        text-align: left;
+        max-width: 20ch;
+    }
+    h2 {
+        text-align: left;
+    }
+    button {
+        margin: 0 auto;
+        width: max-content;
+        padding: 12px 10%;
+    }
+}
+
+.attribution {
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.attribution a {
+    color: yellow;
+}
